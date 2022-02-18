@@ -246,3 +246,41 @@ This is an exercise only and has no new material.
 - You don't have to import react anymore
 - Babble takes the jsx <div></div> and places it into the base React create element code
 - Prettier is a useful plugin - reforms for indends and what not
+
+
+## Lesson 4
+- UseEffect called when mount and when the dep array changes
+- UseEffect return called when unmounted and when the dep array changes, needed for async requests
+
+useEffect
+(nav away)
+unMount
+useEffect - for new thing
+(repeat)
+
+x={}, putting x in a useEffect would make it unstable, objects are compared through memory address
+- useLayoutEffect happens before the paint, useEffect happens after the paint
+
+- use ref can act as state without rerender on change
+
+## Lesson 5
+- context prevents prop drilling
+
+## Lesson 6
+- mutations will lock down the cache when it is being used (?)
+ 
+## Elective Memo
+- memo checks on a triple equals standpoint, so functions and objects will break memo non-render
+- You can use useCallback to stabalize functions or useMemo to stabalize objects, but there is a complexity trade off
+when things may not be made faster
+
+## Lesson 7
+- Turn large list component into its own component
+- Memoize the component, but if that coponents is depending on a state (or changing data), this will not work
+- We can prioritize the renders with useTransition - it will let the most imporant render interupt the lesser important render
+  - renders happen in a stack
+- useMemo for any long pieces of data that is fetched on each render
+- useCallback/memo for any api function that is being created many times per render (?)
+
+https://github.com/reactwg/react-18/discussions/41
+https://github.com/reactwg/react-18/discussions/65
