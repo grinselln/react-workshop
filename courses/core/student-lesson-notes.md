@@ -238,3 +238,11 @@ This is an exercise only and has no new material.
 - The main principal of React unit testing is - Test the component the way the user uses it, not the implementation details of the component.
 - In other words, `render(<Comp />)` render the component in the test and issue events onto the component similarly to how the user clicks, submits forms, or uses keyboard events on the component. Then observe the fake DOM in the unit test to see if the component renders what you'd expect. The "fake DOM" is orchestrated through Jest and JSDOM.
 - Mock out (with Jest) the React-tree architecture above your component (Context, Redux, etc) or environmental things like the URL, and mock out sub (child) components. This allows you to test your component in isolation.
+
+# My Own Notes
+
+## Lesson 1
+- vite requires files to be named jsx
+- You don't have to import react anymore
+- Babble takes the jsx <div></div> and places it into the base React create element code
+- Prettier is a useful plugin - reforms for indends and what not
